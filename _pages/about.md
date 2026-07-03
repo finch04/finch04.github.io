@@ -1,34 +1,43 @@
 ---
 layout: about
-title: about
+title: 关于我
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<div align="center">
+  <h1>Hi there, I'm Finch 👋</h1>
+</div>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<a href="#"><img align="right" src="https://github.com/isPainting/isPainting/raw/main/images/banner.gif" width="200px" height="200px" /></a>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I’m a student focused on Java & AI development. 📚︎
+
+While I keep improving my technical skills, I value creative thinking and original ideas even more. 💡
+
+I’m passionate about contributing to open-source projects and building practical, impactful tools. 👐
+
+I’m always eager to learn new technologies and enjoy collaborating with others to solve real-world problems. ⚙︎
+
+Beyond coding, I love reflecting on life, humanity, and society, and I enjoy sharing insights and knowledge across different platforms. ❤️‍🔥
+
+Looking forward to connecting with you! 😇
+
+- ⚡ <a href="https://blog.csdn.net/weixin_73195042">My CSDN</a>
+- 🌱 <a href="https://gitee.com/fu-shenqi">My Gitee</a>
+- 👯 <a href="https://osc.tsguas.cn/">My Campus club</a>
+- 📫 <a href="mailto:1418875140@qq.com">My Email</a>
+
+---
+
+## Tech Stack 🔧
+
+`Java` • `AI` • `Spring Frameworks` • `Relational Database` • `NoSQL` • `Distributed Systems` • `Microservices` • `DevOps`
+
+<div align="center">
+  <a href="https://github.com/finch04">
+    <img src="https://img.shields.io/static/v1?style=for-the-badge&label=CREATED%20BY&message=Finch&color=000000">
+  </a>
+  <a href="https://github.com/finch04">
+    <img src="https://img.shields.io/static/v1?style=for-the-badge&label=LICENSE&message=MIT&color=000000">
+  </a>
+</div>
