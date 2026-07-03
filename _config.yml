@@ -17,10 +17,9 @@ keywords: Java, AI, Developer
 lang: en
 icon: ⚛️
 
-# ！！！重要：网站地址配置 ！！！
-url: "https://finch04.github.io"  # 必须用引号括起来
-baseurl: ""  # 必须用引号括起来，留空表示根目录
-repository: finch04/finch04.github.io  # al-folio 必需
+url: "https://finch04.github.io"
+baseurl: ""
+repository: finch04/finch04.github.io
 
 last_updated: false
 impressum_path: 
@@ -36,12 +35,10 @@ author:
   github: "finch04"
   avatar: "/assets/img/profile.png"
 
-# Social links
 social:
   github: finch04
   email: 1418875140@qq.com
 
-# Custom navigation
 navbar_items:
   - name: 关于我
     link: /
@@ -53,22 +50,39 @@ navbar_items:
     link: https://gitee.com/fu-shenqi
 
 # -----------------------------------------------------------------------------
-# al-folio theme configuration
+# al-folio configuration (必须保留这些插件)
 # -----------------------------------------------------------------------------
 
-# Theme
-theme: al-folio
+# 核心主题 - 必须保留
+theme: al_folio_core
 
-# 启用功能
+# 必须包含的插件列表
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  # al-folio 必需插件 (thin-starter契约要求)
+  - al_folio_core
+  - al_folio_distill
+  - al_cookie
+  - al_icons
+  - al_math
+
+# -----------------------------------------------------------------------------
+# al-folio 功能开关
+# -----------------------------------------------------------------------------
+
 enable_darkmode: true
-enable_math: true
+enable_math: true  # 如果启用，必须包含 al_math 插件
 enable_masonry: true
 enable_medium_zoom: true
 enable_progressbar: true
 enable_navbar_social: false
 enable_project_categories: true
 enable_tooltips: false
-enable_cookie_consent: false
+enable_cookie_consent: true  # 如果启用，必须包含 al_cookie 插件
 
 # Layout
 navbar_fixed: true
@@ -87,22 +101,44 @@ pagination:
   enabled: true
 
 # -----------------------------------------------------------------------------
-# Giscus comments (Disable if not needed)
+# 第三方库 (thin-starter契约要求必须定义)
 # -----------------------------------------------------------------------------
 
-giscus:
-  repo: finch04/finch04.github.io
-  repo_id: ""
-  category: Comments
-  category_id: ""
-  mapping: title
-  strict: 1
-  reactions_enabled: 1
-  input_position: bottom
-  dark_theme: dark
-  light_theme: light
-  emit_metadata: 0
-  lang: en
+third_party_libraries:
+  fontawesome:
+    version: "7.2.0"
+    url:
+      css: "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{version}}/css/all.min.css"
+    integrity:
+      css: "sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c="
+  academicons:
+    version: "1.9.5"
+    url:
+      css: "https://cdn.jsdelivr.net/npm/academicons@{{version}}/css/academicons.min.css"
+    integrity:
+      css: "sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw="
+  scholar-icons:
+    version: "1.0.3"
+    url:
+      css: "https://cdn.jsdelivr.net/npm/scholar-icons@{{version}}/css/scholar-icons.css"
+    integrity:
+      css: "sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY="
+  tikzjax:
+    version: "1.0.8"
+    url:
+      css: "https://cdn.jsdelivr.net/npm/@planktimerr/tikzjax@{{version}}/dist/fonts.css"
+      js: "https://cdn.jsdelivr.net/npm/@planktimerr/tikzjax@{{version}}/dist/tikzjax.js"
+    integrity:
+      css: "sha256-p+CQrhSq3dnLHELDcVBFDf4whOor3w8gzLuc/pwRLyQ="
+      js: "sha256-7SCmUR11IG4MkSoeLUq0pombv7oeV7yZuu7Z82e4Uy4="
+  tocbot:
+    version: "4.36.4"
+    url:
+      css: "https://cdn.jsdelivr.net/npm/tocbot@{{version}}/dist/tocbot.css"
+      js: "https://cdn.jsdelivr.net/npm/tocbot@{{version}}/dist/tocbot.min.js"
+    integrity:
+      css: "sha256-zTN0r+0OKaIv2xqeNNIYxNk0pWJ6+IqPGc1iDgVzWF0="
+      js: "sha256-lo/r+jQ81wWrxdIiiiEEd538z4+dTJTt+leOuAS7GCw="
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -134,14 +170,6 @@ keep_files:
   - CNAME
   - .nojekyll
 
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-paginate-v2
-  - jekyll/scholar
-
 # Collections
 collections:
   publications:
@@ -172,3 +200,18 @@ defaults:
     values:
       layout: post
       comments: true
+
+# Giscus comments
+giscus:
+  repo: finch04/finch04.github.io
+  repo_id: ""
+  category: Comments
+  category_id: ""
+  mapping: title
+  strict: 1
+  reactions_enabled: 1
+  input_position: bottom
+  dark_theme: dark
+  light_theme: light
+  emit_metadata: 0
+  lang: en
